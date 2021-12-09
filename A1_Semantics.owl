@@ -1,0 +1,763 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Test"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasDisease -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasInteractionOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasInteractionOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasTest">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Test"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Major -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Major">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasInteractionOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Minor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Minor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasInteractionOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Moderate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Moderate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#HasInteractionOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TakeMedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TakeMedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TreatedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Doctor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#DiseaseName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#DiseaseName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#DoctorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#DoctorName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Doctor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#EndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#EndDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MedicationDate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Has_Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Has_Date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Test"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MeasurementName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MeasurementName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MedicationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MedicationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MedicationName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MedicationName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#PatientName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#PatientName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#StartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#StartDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MedicationDate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Doctor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MeasurementA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MeasurementA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MeasurementB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MeasurementB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#MeasurementB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TreatedBy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TreatedBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Doctor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Test -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Test">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Contains"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Measurment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TestA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TestA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Test"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TestB"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TestB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#TestB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Test"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Acetaminophen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Acetaminophen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ranitidine"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetaminophen</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ahmed">
+        <HasDisease rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Pyrexia"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed1"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed2"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Salah"/>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ahmed</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asprin</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clopidogrel</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#AhmedMed3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/3/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Amlodipine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Amlodipine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Enalapril"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amlodipine</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Asprin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Asprin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Rabeprazole"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Enalapril"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Insulin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asprin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ciprofloxcin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ciprofloxcin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Prednisolone"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Theophylline"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Tramadol"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciprofloxcin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Clopidogrel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Clopidogrel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Rabeprazole"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clopidogrel</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Diabetes_Mellitus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Diabetes_Mellitus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease"/>
+        <DiseaseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diabetes_Mellitus</DiseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Diclofenac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Diclofenac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ranitidine"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diclofenac</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Enalapril -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Enalapril">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Spironolactone"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Amlodipine"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Asprin"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Insulin"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Metformin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enalapril</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Gamal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Gamal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <HasDisease rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Hypertension"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#GamalMed1"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#GamalMed2"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Salah"/>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamal</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#GamalMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#GamalMed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</EndDate>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enalapril</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#GamalMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#GamalMed2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10/2/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metformin</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/2/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Hypertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Hypertension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease"/>
+        <DiseaseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension</DiseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ibrahim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ibrahim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <HasDisease rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Diabetes_Mellitus"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed1"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed2"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Salah"/>
+        <DoctorName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ibrahim</DoctorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Enalapril</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theophylline</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#IbrahimMed3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tramadol</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Insulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Insulin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Asprin"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Enalapril"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ischemic_Heart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ischemic_Heart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease"/>
+        <DiseaseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ischemic_Heart</DiseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Metformin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Metformin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Enalapril"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ranitidine"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metformin</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Nada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Nada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <HasDisease rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ischemic_Heart"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed1"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed2"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Salah"/>
+        <ID rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</ID>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nada</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ciprofloxcin</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prednisolone</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#NadaMed3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insulin</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Prednisolone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Prednisolone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ciprofloxcin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prednisolone</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Pyrexia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Pyrexia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Disease"/>
+        <DiseaseName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyrexia</DiseaseName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Rabeprazole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Rabeprazole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Clopidogrel"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Asprin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rabeprazole</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ranitidine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ranitidine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Acetaminophen"/>
+        <Minor rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Diclofenac"/>
+        <Moderate rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Metformin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ranitidine</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Saber -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Saber">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Patient"/>
+        <HasDisease rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Diabetes_Mellitus"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed1"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed2"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed3"/>
+        <TreatedBy rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Salah"/>
+        <PatientName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saber</PatientName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <TakeMedication rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Metformin"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metformin</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1/4/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ranitidine</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#SaberMed3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <EndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/4/2021</EndDate>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetaminophen</MedicationName>
+        <StartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2/3/2021</StartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Salah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Salah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Doctor"/>
+        <DoctorName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salah</DoctorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Spironolactone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Spironolactone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Enalapril"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spironolactone</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Theophylline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Theophylline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ciprofloxcin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Theophylline</MedicationName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Tramadol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Tramadol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Medication"/>
+        <Major rdf:resource="http://www.semanticweb.org/eyad/ontologies/2021/11/untitled-ontology-4#Ciprofloxcin"/>
+        <MedicationName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tramadol</MedicationName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
